@@ -17,9 +17,9 @@
 
     <EditText
         android:id="@+id/etTodoTitle"
-        android:layout_width="157dp"
+        android:layout_width="180dp"
         android:layout_height="43dp"
-        android:hint="@string/enter_todo_title"
+        android:hint="@string/enter_todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -27,16 +27,23 @@
         android:id="@+id/btnAddTodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/andada"
         android:text="@string/add_todo"
+        android:textColor="#000000"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteDoneTodos"
         app:layout_constraintStart_toEndOf="@+id/etTodoTitle" />
 
     <Button
         android:id="@+id/btnDeleteDoneTodos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/andada"
         android:text="@string/delete_done"
+        android:textColor="#000000"
         android:textColorHighlight="#FFDD00"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnAddTodo" />
